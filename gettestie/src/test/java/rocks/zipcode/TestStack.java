@@ -18,6 +18,13 @@ public class TestStack {
         Stack<String> stack = new Stack<>();
         stack.push("Hello world");
         assertEquals(false, stack.isEmpty()); // false
+
+        assertEquals("Hello world", stack.peek());
+
+        stack.push("Yep");
+        assertEquals("Yep", stack.pop());
+        assertEquals("Hello world", stack.pop());
+        assertEquals(0, stack.size());
     }
 
     // Make a bigger test exercising more Stack methods.....
